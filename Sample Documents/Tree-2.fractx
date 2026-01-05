@@ -1,0 +1,1 @@
+{"initialAngle":0,"turnAngle":0.13962634015954636,"evaluationDepth":5,"axiom":"F","depthScale":0.4,"stepLength":10,"rules":{"F":"|[5+F][7-F]-|[4+F][6-F]-|[3+F][5-F]-|F"}}

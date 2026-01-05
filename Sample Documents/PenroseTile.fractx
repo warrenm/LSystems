@@ -1,0 +1,1 @@
+{"turnAngle":0.6283185307179586,"evaluationDepth":4,"initialAngle":0,"rules":{"F":"","X":"+YF--ZF[3-WF--XF]+","Y":"-WF++XF[+++YF++ZF]-","W":"YF++ZF4-XF[-YF4-WF]++","Z":"--YF++++WF[+ZF++++XF]--XF"},"stepLength":10,"depthScale":1,"axiom":"[X]++[X]++[X]++[X]++[X]"}

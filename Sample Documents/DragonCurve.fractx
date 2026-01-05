@@ -1,0 +1,1 @@
+{"stepLength":3,"rules":{"G":"-G++G-","F":"[+F][+G--G4-F]"},"axiom":"F","turnAngle":0.7853981633974483,"initialAngle":1.5707963267948966,"evaluationDepth":9,"depthScale":1}
