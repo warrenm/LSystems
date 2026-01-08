@@ -109,19 +109,19 @@ public extension LSystem {
                     turtle.popDepth()
                 } else if char.uppercased() == "F" {
                     turtle.penDown()
-                    turtle.goForward(distance: stepLength)
+                    turtle.goForward(stepLength)
                 } else if char.uppercased() == "G" {
                     turtle.penUp()
-                    turtle.goForward(distance: stepLength)
+                    turtle.goForward(stepLength)
                 }/* else */
                 // Other letters are valid as rules but have no effect on drawing
             } else if char == "+" {
                 let angleMultiplier = multiplier != 0 ? CGFloat(multiplier) : 1.0
-                turtle.turn(angle: turnAngle * angleMultiplier)
+                turtle.turn(turnAngle * angleMultiplier)
                 multiplier = 0
             } else if char == "-" {
-                let angleMultiplier = multiplier != 0 ? -CGFloat(multiplier) : -1.0
-                turtle.turn(angle: turnAngle * angleMultiplier)
+                let angleMultiplier = multiplier != 0 ? CGFloat(multiplier) : 1.0
+                turtle.turn(turnAngle * -angleMultiplier)
                 multiplier = 0
             } else if char == "[" {
                 turtle.saveState()
@@ -133,7 +133,7 @@ public extension LSystem {
                 turtle.popDepth()
             } else if char == "|" {
                 turtle.penDown()
-                turtle.goForward(distance: stepLength)
+                turtle.goForward(stepLength)
             } else if let digitValue = char.wholeNumberValue {
                 multiplier = multiplier * 10 + digitValue
             }

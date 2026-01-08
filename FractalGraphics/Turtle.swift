@@ -43,7 +43,7 @@ public class Turtle {
         depthScale = scale
     }
 
-    public func goForward(distance: CGFloat) {
+    public func goForward(_ distance: CGFloat) {
         let effectiveDistance = distance * pow(depthScale, CGFloat(depth))
 
         let deltaX = effectiveDistance * sin(currentAngle.radians)
@@ -59,7 +59,7 @@ public class Turtle {
         currentPosition = nextPoint
     }
 
-    public func turn(angle: Angle2D) {
+    public func turn(_ angle: Angle2D) {
         currentAngle += angle
     }
 
